@@ -11,7 +11,8 @@ import {
   IonMenuButton,
   IonList,
   IonItem,
-  IonLabel
+  IonLabel,
+  IonThumbnail
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -30,7 +31,8 @@ import {
     IonMenuButton,
     IonList,
     IonItem,
-    IonLabel
+    IonLabel,
+    IonThumbnail
   ],
 })
 export class ProductListPage implements OnInit {
