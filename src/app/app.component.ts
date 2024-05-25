@@ -11,6 +11,8 @@ import {
   IonList,
   IonButton,
   IonItem,
+  IonLabel,
+  IonMenuToggle
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -29,6 +31,8 @@ import {
     IonButton,
     IonItem,
     RouterLink,
+    IonLabel,
+    IonMenuToggle
   ],
 })
 export class AppComponent {
