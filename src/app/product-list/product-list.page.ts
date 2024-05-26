@@ -12,7 +12,19 @@ import {
   IonList,
   IonItem,
   IonLabel,
-  IonThumbnail
+  IonThumbnail,
+  IonAvatar,
+  IonImg,
+  IonSearchbar,
+  IonButton,
+  IonModal,
+  IonAccordion,
+  IonAccordionGroup,
+  IonBadge,
+  IonGrid,
+  IonRow,
+  IonCol,
+  IonApp,
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -21,6 +33,13 @@ import {
   styleUrls: ['./product-list.page.scss'],
   standalone: true,
   imports: [
+    IonApp,
+    IonAccordion,
+    IonModal,
+    IonButton,
+    IonSearchbar,
+    IonImg,
+    IonAvatar,
     IonContent,
     IonHeader,
     IonTitle,
@@ -32,7 +51,12 @@ import {
     IonList,
     IonItem,
     IonLabel,
-    IonThumbnail
+    IonThumbnail,
+    IonAccordionGroup,
+    IonBadge,
+    IonGrid,
+    IonRow,
+    IonCol,
   ],
 })
 export class ProductListPage implements OnInit {

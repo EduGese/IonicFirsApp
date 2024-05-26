@@ -13,22 +13,32 @@
       <ion-title slot="center" size="large">ProductList</ion-title>
     </ion-toolbar>
   </ion-header>
-
-
-
-
-  <ion-list>
+  <ion-accordion-group>
     @for (product of products; track product._id) {
-    <ion-item>
-      <ion-thumbnail>
-        <img [src]="product.image" [alt]="product.name">
-      </ion-thumbnail>
-      <ion-label>
-        <h2>{{product.name}}</h2>
+    <ion-accordion  value="{{product._id}}">
+      <ion-item slot="header">
+        <ion-thumbnail slot="start">
+          <img [src]="product.image" [alt]="product.name">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{product.name}}</h2>
+        </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
         <p>{{product.description}}</p>
-        <h4>{{product.price}}£</h4>
-      </ion-label>
-    </ion-item>
-    }
-  </ion-list>
+        <ion-grid>
+          <ion-row>
+            <ion-col>{{product.price}} £</ion-col>
+            <ion-col><ion-badge color="tertiary">{{product.category}}</ion-badge></ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-accordion>
+  }
+  </ion-accordion-group>
+
+
+
+
+
 </ion-content>
